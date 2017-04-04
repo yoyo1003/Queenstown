@@ -8,9 +8,29 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
+<script src="myScript.js"></script>
 </head>
 
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 
 <div class="container-fluid">
 <div class="row">
@@ -23,21 +43,21 @@
 <div class="row">
     <div class="col-sm-12" style="background-color:lavender;">
  <ul class="topnav">
-  <li><a href="idex.html">Home</a></li>
+  <li><a href="index.html">Home</a></li>
   <li><a class="active"  href="accommdation.html">Accommodation</a></li>
-  <li><a href="#contact">Gallery</a></li>
-  <li class="right"><a href="#about">Join us</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li class="right"><a href="joinus.html">Join us</a></li>
 </ul>
 </div>
   <div class="row">
-    <div class="col-sm-8" style="background-color:lavenderblush;">
+    <div class="col-sm-8" style="background-color:lavender;">
 	<div class="row">
 	<div class="col-md-12">
   <div class="col-md-6">
     <div class="thumbnail">
         <img src="Hotel1.jpg" alt="hotelroom">
         <div class="caption">
-          <p>Whetu Apartments Hotel </p>
+         <p>Kokoru Stadium Hotel </p>
 		  <p><span class="glyphicon glyphicon-usd"></span>372</p>
 		  <button type="button" class="btn btn-primary disabled">View more</button>
 
@@ -145,11 +165,9 @@
   </div>
   </div>
   </div>
-<div class="col-md-12">
-</div>
   </div>
 	
-<div class="col-sm-4" style="background-color:lavenderblush;" >
+<div class="col-sm-4" style="background-color:lavender;" >
 	<h3>Today's News</h3>
 	<pre>
   <ul class="list-group">

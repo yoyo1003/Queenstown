@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Queenstown Tourism</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="myScript.js"></script>
+</head>
+
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+<div class="container-fluid">
+<div class="row">
+    <div style="background-color:lavender;" >
+	<div style="padding-top:80px" class="text-center" >
+  <h1>Kia ora!</h1>
+  <p><em>Mai ki te Tāhuna</em></p>
+  <p>Welcome to Queenstown!</p>
+</div>
+
+<div class="row">
+    <div class="col-sm-12" style="background-color:lavender;">
+	<ul class="topnav">
+  <li><a  href="index.html">Home</a></li>
+  <li><a href="accommdation.html">Accommodation</a></li>
+  <li><a class="active" href="#">Gallery</a></li>
+  <li class="right"><a href="joinus.html">Join us</a></li>
+</ul>
+</div>
+
+<div class="row">
+   <div style="background-color:lavender;" >
+	<div class="row">
+	<div class="slideshow-container">
+<div class="mySlides fade">
+  <img src="gallery1.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="gallery2.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="gallery3.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="gallery4.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="gallery5.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="gallery6.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="gallery7.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="gallery8.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="gallery9.jpg" style="width:100%">
+</div>
+<div class="mySlides fade">
+  <img src="gallery10.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+</script>
+
+</body>
