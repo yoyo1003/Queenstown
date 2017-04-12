@@ -46,6 +46,8 @@ function topFunction() {
 	<ul class="topnav">
   <li><a  href="index.html">Home</a></li>
   <li><a href="accommdation.html">Accommodation</a></li>
+  <li><a href="index.html">Places for dining</a></li>
+  <li><a href="index.html">Places to visit</a></li>
   <li><a href="gallery.html">Gallery</a></li>
   <li class="right" class="active"><a href="#">Join us</a></li>
 </ul>
@@ -62,7 +64,7 @@ function topFunction() {
                         <div class="col-xs-6 col-md-6">
                             <input type="text" name="lastname" value="" class="form-control input-lg" placeholder="Last Name" id="Last Name" />                        </div>
                     </div>
-                    <input type="text" name="email" value="" class="form-control input-lg" placeholder="Your Email"  /><input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  /><input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  />                    <label>Birth Date</label>                    <div class="row">
+                    <input type="email" name="email" value="" class="form-control input-lg" placeholder="Your Email"   id="email"/><input type="password" name="password" value="" class="form-control input-lg" placeholder="Password"  id="password"/><input type="password" name="confirm_password" value="" class="form-control input-lg" placeholder="Confirm Password"  id="confirm_password"/>                    <label>Birth Date</label>                    <div class="row">
                         <div class="col-xs-4 col-md-4">
                             <select name="month" class = "form-control input-lg">
 <option value="01">Jan</option>
@@ -211,24 +213,26 @@ function topFunction() {
 	</div>
 	<script>
 	function SignupFunction(){
-	var e,x,y,text;
+	var cp,e,p,x,y,text;
 	x=document.getElementById("First Name").value;
 	y=document.getElementById("Last Name").value;
-	if(isNaN(x)||x<3||x>10)
+	e=document.getElementById("email").value;
+	p=document.getElementById("password").value;
+	cp=document.getElementById("confirm_password").value;
+	if(x.length<3||x.length>10)
 	{
 	text=" Input not valid";
 	alert("First Name must be filled out");
 	}
-	else if(isNaN(y)||y<5||y>10)
+	else if(x.length<5||x.length>10)
 	{
 	text=" Input not valid";
 	alert("Last Name must be filled out");
 	}
-	else if(input type!="email" )
-	{
-	text=" Input not valid";
-	alert("");
-	}	
+else if(e.search(/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/) = -1)	{
+text=" Input not valid";
+	alert(" must be filled out");
+	}
 }
 	</script>
 </body>

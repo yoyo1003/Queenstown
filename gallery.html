@@ -46,87 +46,195 @@ function topFunction() {
 	<ul class="topnav">
   <li><a  href="index.html">Home</a></li>
   <li><a href="accommdation.html">Accommodation</a></li>
-  <li><a class="active" href="#">Gallery</a></li>
-  <li class="right"><a href="joinus.html">Join us</a></li>
+  <li><a href="index.html">Places for dining</a></li>
+  <li><a href="index.html">Places to visit</a></li>
+  <li><a href="gallery.html" class="active">Gallery</a></li>
+  <li class="right"><a href="#">Join us</a></li>
 </ul>
 </div>
-
 <div class="row">
-   <div style="background-color:lavender;" >
-	<div class="row">
-	<div class="slideshow-container">
-<div class="mySlides fade">
-  <img src="gallery1.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <img src="gallery2.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <img src="gallery3.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <img src="gallery4.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <img src="gallery5.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <img src="gallery6.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <img src="gallery7.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <img src="gallery8.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <img src="gallery9.jpg" style="width:100%">
-</div>
-<div class="mySlides fade">
-  <img src="gallery10.jpg" style="width:100%">
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>
+  <div class="column">
+    <img src="gallery1.jpg" style="height:300px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="gallery2.jpg" style="height:300px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="gallery3.jpg" style="height:300px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="gallery4.jpg" style="height:300px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
+    <div class="column">
+    <img src="gallery5.jpg" style="height:300px" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="gallery6.jpg" style="height:300px" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="gallery7.jpg" style="height:300px" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="gallery8.jpg" style="height:300px" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+  </div>
+      <div class="column">
+    <img src="gallery9.jpg" style="height:300px" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="gallery10.jpg" style="height:300px" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="gallery11.jpg" style="height:300px" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="gallery12.jpg" style="height:300px" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+  </div>
 </div>
 
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
 
+    <div class="mySlides">
+      <div class="numbertext">1 / 12</div>
+      <img src="gallery1.jpg" style="width:100%">
+    </div>
 
-</div>
-</div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 12</div>
+      <img src="gallery2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 12</div>
+      <img src="gallery3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 12</div>
+      <img src="gallery4.jpg" style="width:100%">
+    </div>
+	<div class="mySlides">
+      <div class="numbertext">5 / 12</div>
+      <img src="gallery5.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">6 / 12</div>
+      <img src="gallery6.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">7 / 12</div>
+      <img src="gallery7.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">8 / 12</div>
+      <img src="gallery8.jpg" style="width:100%">
+    </div>
+		<div class="mySlides">
+      <div class="numbertext">9 / 12</div>
+      <img src="gallery9.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">10 / 12</div>
+      <img src="gallery10.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">11 / 12</div>
+      <img src="gallery11.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">12 / 12</div>
+      <img src="gallery12.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="column">
+      <img class="demo cursor" src="gallery1.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="gallery4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery5.jpg" style="width:100%" onclick="currentSlide(5)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery6.jpg" style="width:100%" onclick="currentSlide(6)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery7.jpg" style="width:100%" onclick="currentSlide(7)" alt="">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="gallery8.jpg" style="width:100%" onclick="currentSlide(8)" alt="">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="gallery9.jpg" style="width:100%" onclick="currentSlide(9)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery10.jpg" style="width:100%" onclick="currentSlide(10)" alt="">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="gallery11.jpg" style="width:100%" onclick="currentSlide(11)" alt="">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="gallery12.jpg" style="width:100%" onclick="currentSlide(12)" alt="">
+    </div>
+  </div>
 </div>
 
 <script>
-var slideIndex = 0;
-showSlides();
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
 
-function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
 }
 </script>
 
