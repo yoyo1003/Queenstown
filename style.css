@@ -381,3 +381,76 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
 }
+
+/*accommdation*/
+.ACcontainer {
+  border: 2px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  padding: 16px;
+}
+
+.ACcontainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.ACcontainer img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 10%;
+}
+
+.ACcontainer span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .ACcontainer {
+      text-align: center;
+  }
+  .ACcontainer img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
+
+/*dinning*/
+
+.DIcontainer {
+  border: 2px solid #ccc;
+  background-color: white;
+  border-radius: 50px;
+  padding: 16px;
+}
+
+.DIcontainer::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.DIcontainer img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 30%;
+}
+
+.DIcontainer span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+@media (max-width: 500px) {
+  .DIcontainer {
+      text-align: center;
+  }
+  .DIcontainer img {
+      margin: auto;
+      float: none;
+      display: block;
+  }
+}
