@@ -1,8 +1,8 @@
 *{
 	font-family:Roboto, sans-serif;
 	size:12px;
+	box-sizing: border-box;
 }
-
 
  ul.topnav {
     list-style-type: none;
@@ -41,13 +41,22 @@ ul.topnav li.right {
     ul.topnav li {float: none;}
 }
 
+ul.group{
+    border-style: solid;
+    border-width: 3px;
+	font-size:18px;
+	padding: 10px 10px 10px 20px;
+}
+.indexp{
+	    border-style: solid;
+    border-width: 3px;
+	font-size:18px;
+	padding: 10px 10px 10px 20px;
+}
+
 body {
   font-family: Verdana, sans-serif;
   margin: 0;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .row > .column {
@@ -55,6 +64,7 @@ body {
 }
 
 .row:after {
+  background-color:white;
   content: "";
   display: table;
   clear: both;
@@ -251,11 +261,7 @@ legend{
 
 
 /*gallery*/
-body {font-family: Verdana,sans-serif;}
 
-* {
-  box-sizing: border-box;
-}
 
 .row > .column {
   padding: 0 8px;
