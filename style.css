@@ -4,6 +4,26 @@
 	box-sizing: border-box;
 }
 
+header{
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-8/htmlcss1-img_bicycles.jpeg")  no-repeat center bottom;
+  height: 900px;
+  position: relative;
+  width: 100%;
+  background-size:cover;
+  background-attachment: fixed;
+  max-width: 100%;
+}
+.container
+{
+	padding-top:80px;
+	width:100%;
+	height:400px;
+	text-align: center;
+	background-color:white;
+    filter:alpha(opacity=60);
+    opacity:0.6;
+}
+
  ul.topnav {
     list-style-type: none;
     margin: 0;
@@ -60,198 +80,11 @@ ul.group{
     border-style: solid;
     border-width: 3px;
 	font-size:18px;
-	padding: 10px 10px 10px 20p;
-	margin: 5px;
+	padding: 20px 20px 20px 50p;
+	
 }
 
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-}
 
-.row > .column {
-  padding: 0 8px;
-}
-
-.row:after {
-  background-color:white;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 25%;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding-top: 100px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 1200px;
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-img {
-  margin-bottom: -4px;
-}
-
-.caption-container {
-  text-align: center;
-  background-color: black;
-  padding: 2px 16px;
-  color: white;
-}
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
-legend{
-	color:#141823;
-	font-size:25px;
-	font-weight:bold;
-}
-.signup-btn {
-  background: #79bc64;
-  background-image: -webkit-linear-gradient(top, #79bc64, #578843);
-  background-image: -moz-linear-gradient(top, #79bc64, #578843);
-  background-image: -ms-linear-gradient(top, #79bc64, #578843);
-  background-image: -o-linear-gradient(top, #79bc64, #578843);
-  background-image: linear-gradient(to bottom, #79bc64, #578843);
-  -webkit-border-radius: 4;
-  -moz-border-radius: 4;
-  border-radius: 4px;
-  text-shadow: 0px 1px 0px #898a88;
-  -webkit-box-shadow: 0px 0px 0px #a4e388;
-  -moz-box-shadow: 0px 0px 0px #a4e388;
-  box-shadow: 0px 0px 0px #a4e388;
-  font-family: Arial;
-  color: #ffffff;
-  font-size: 20px;
-  padding: 10px 20px 10px 20px;
-  border: solid #3b6e22  1px;
-  text-decoration: none;
-}
-
-.signup-btn:hover {
-  background: #79bc64;
-  background-image: -webkit-linear-gradient(top, #79bc64, #5e7056);
-  background-image: -moz-linear-gradient(top, #79bc64, #5e7056);
-  background-image: -ms-linear-gradient(top, #79bc64, #5e7056);
-  background-image: -o-linear-gradient(top, #79bc64, #5e7056);
-  background-image: linear-gradient(to bottom, #79bc64, #5e7056);
-  text-decoration: none;
-}
-.navbar-default .navbar-brand{
-		color:#fff;
-		font-size:30px;
-		font-weight:bold;
-	}
-.form .form-control { margin-bottom: 10px; }
-@media (min-width:768px) {
-	#home{
-		margin-top:50px;
-	}
-	#home .slogan{
-		color: #0e385f;
-		line-height: 29px;
-		font-weight:bold;
-	}
-}
 
 #myBtn {
   display: none;
