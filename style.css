@@ -1,11 +1,10 @@
 *{
 	font-family:Roboto, sans-serif;
 	size:12px;
-	box-sizing: border-box;
 }
 
 header{
-  background: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-8/htmlcss1-img_bicycles.jpeg")  no-repeat center bottom;
+  background: url("header.jpg")  no-repeat center bottom;
   height: 900px;
   position: relative;
   width: 100%;
@@ -22,6 +21,10 @@ header{
 	background-color:white;
     filter:alpha(opacity=60);
     opacity:0.6;
+}
+
+h3{
+	padding-left:20px;
 }
 
  ul.topnav {
@@ -71,17 +74,16 @@ ul.group{
     border-style: solid;
     border-width: 3px;
 	font-size:18px;
-	padding: 10px 10px 10px 20px;
+	padding-left: 20px;
 	height: 500px;
 	overflow:scroll;
 }
 
-.normalp{
+.normalp p{
     border-style: solid;
     border-width: 3px;
 	font-size:18px;
-	padding: 20px 20px 20px 50p;
-	
+	padding-left: 5px;
 }
 
 
@@ -258,6 +260,7 @@ img.hover-shadow {
 }
 
 .ACcontainer img {
+  padding-left: 10px;
   float: left;
   margin-right: 20px;
   border-radius: 10%;
