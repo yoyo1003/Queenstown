@@ -234,6 +234,10 @@ ul.group{
   display: none;
 }
 
+.mySlides img {
+  height: 800px;
+}
+
 .cursor {
   cursor: pointer
 }
@@ -385,8 +389,49 @@ img.hover-shadow {
   }
 }
 
+.sign{
+	text-align: right;
+	width: 200px;
+	line-height: 50px;
+	font-size:20px;
+}
 
+.signtext{
+	width: 150px;
+	text-align: left;
+	font-size: 18px;
+}
 
+.signwarn{
+    width: 150px;
+	text-align: left;
+	font-size: 12px;
+}
+
+.signin{
+	float: center;
+	line-height: 50px;
+	width:220px;
+	padding-top:15px;
+	padding-bottom:5px;
+}
+
+.signbtn{
+	border: 2px solid #ccc;
+	background-color:white;
+	text-align: center;
+	width:100px;
+	height:50px;
+	font-size:18px;
+    border-radius: 10px;
+}
+
+form{
+    border-style: solid;
+    border-width: 3px;
+	padding: 20px;
+	width:100%;
+}
 
 
 

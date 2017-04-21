@@ -72,3 +72,90 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+//sign up
+function checkname()      
+{  
+    var name = document.getElementById("uName").value;
+    var ts = document.getElementById("namets");  
+    if(name.length<3|| name.length>15)      
+    {     
+        ts.innerHTML ="Name must be 3-15 letters";  
+        ts.style.color="red";  
+        return false;  
+    }  
+    ts.innerHTML ='ok';  
+    ts.style.color='green';  
+    return true;  
+}  
+
+function checksurname()      
+{  
+    var surname = document.getElementById("uSurName").value;
+    var ts = document.getElementById("snamets");  
+    if(surname.length<5|| surname.length>15)      
+    {     
+        ts.innerHTML ="Surname must be 5-15 letters";  
+        ts.style.color="red";  
+        return false;  
+    }  
+    ts.innerHTML ='ok';  
+    ts.style.color='green';  
+    return true;  
+}  
+function checkpass(){  
+    var userPass = $("#uPass").val();  
+      
+    var pts = document.getElementById("passts");  
+      
+    if(userPass.length<6 || userPass.length >15)    
+    {     
+        pts.innerHTML ="Surname must be 6-15 letters";  
+        pts.style.color="red";  
+        return false;  
+    }  
+    pts.innerHTML ="ok";  
+    pts.style.color="green";  
+    return true;  
+}  
+function checkrpass(){  
+    var userPass = $("#uPass").val();  
+    var userRPass = $("#uRPass").val();  
+    var prts =  document.getElementById("passrts");  
+    if (userPass != userRPass) {  
+        prts.innerHTML="Passwords don't match";  
+        prts.style.color="red";  
+        return false;  
+    }  
+    prts.innerHTML ="ok";  
+    prts.style.color="green";  
+    return true;  
+}  
+function checkemail(){  
+    var userEmail = $("#uEmail").val();  
+    var ets = document.getElementById("emailts");  
+    if(!isEmail(userEmail)){  
+        ets.innerHTML ="Email invalidation";  
+        ets.style.color="red";  
+        return false;  
+    }   
+    ets.innerHTML ="ok";  
+    ets.style.color="green";  
+    return true;  
+}  
+function isEmail(str){  
+    var reg = /[a-z0-9-]{1,30}@[a-z0-9-]{1,65}.[a-z]{3}/;  
+    return reg.test(str);  
+}  
+function register() {  
+    if(!checkname()){  
+        return false;  
+    }else if(!checksurname()){  
+        return false;  
+    }else if(!checkpass()) {  
+        return false;  
+    } else if(!checkemail()){  
+        return false;  
+    }   
+    return true;  
+}  
