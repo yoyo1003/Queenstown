@@ -49,74 +49,144 @@ function topFunction() {
   <li class="right"><a href="joinus.html">Join us</a></li>
 </ul>
 </div>
+
+<script>
+window.onload = function(){
+ var star = document.getElementById("star");
+ var star_li = star.getElementsByTagName("li");
+ var result = document.getElementById("result");
+ var i=0;
+ var len = star_li.length;
+ for(i=0; i<len; i++){
+ star_li[i].index = i;
+ star_li[i].onclick = function(){
+    for(i=0; i<len; i++){
+   star_li[i].className = "";
+  }
+ for(i=0; i<=this.index; i++){
+   star_li[i].className = "act";
+  }
+    result.innerHTML = (this.index+1);
+ } 
+ }
+}
+</script>
+
 <div class="col-sm-12" style="background-color:lavender;">
    <div class="col-sm-8">
 	<h3>About Queenstown</h3>
 	<div class="col-md-12">
   <div class="ACcontainer">
   <img src="dining1.jpg" alt="Avatar" style="width:400px">
-  <p><span>Rangi Restaurant</span><br><span class="glyphicon glyphicon-usd" ><font size="25"></span>492</font></p>
+  <p><span>Rangi Restaurant</span><br>Cosy · Casual · Locals</p>
+  <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
 
 <div class="ACcontainer">
     <img src="dining2.jpg" alt="Avatar" style="width:400px">
-  <p><span>Kangi Restaurant</span><br>
-  
- <i class="fa fa-star-half-full"></i>
-
+  <p><span>Kangi Restaurant</span><br>Casual · Locals · Groups</p>
+  <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
   </div>
   	<div class="col-md-12">
   <div class="ACcontainer">
   <img src="dining3.jpg" alt="Avatar" style="width:400px">
-  <p><span>Langi Restaurant</span><br><span class="glyphicon glyphicon-usd" ><font size="24"></span>492</font></p>
+  <p><span>Langi Restaurant</span><br>Casual · Locals · Groups</p>
+    <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
 
 <div class="ACcontainer">
     <img src="dining4.jpg" alt="Avatar" style="width:400px">
-  <p><span>Kongi Restaurant</span><br><span class="glyphicon glyphicon-usd" ><font size="24"></span>352</font></p>
+  <p><span>Kongi Restaurant</span><br>Quiet · Casual · Locals</p>
+    <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
   </div>
   	<div class="col-md-12">
   <div class="ACcontainer">
   <img src="dining5.jpg" alt="Avatar" style="width:400px">
-  <p><span>Hangi Restaurant</span><br><span class="glyphicon glyphicon-usd" ><font size="24"></span>292</font></p>
+  <p><span>Hangi Restaurant</span><br>Casual · Locals · Good for kids</p>
+    <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
 
 <div class="ACcontainer">
     <img src="dining6.jpg" alt="Avatar" style="width:400px">
-  <p><span>Gangi Restaurant</span><br><span class="glyphicon glyphicon-usd" ><font size="24"></span>302</font></p>
+  <p><span>Gangi Restaurant</span><br>Great cocktails · Cosy · Casual</p>
+    <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
   </div>
   	<div class="col-md-12">
   <div class="ACcontainer">
   <img src="dining7.jpg" alt="Avatar" style="width:400px">
-  <p><span>Fangi Restaurant</span><br><span class="glyphicon glyphicon-usd" ><font size="24"></span>622</font></p>
+  <p><span>Fangi Restaurant</span><br>Cosy · Casual · Locals</p>
+    <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
 
 <div class="ACcontainer">
     <img src="dining8.jpg" alt="Avatar" style="width:400px">
-  <p><span>Dangi Restaurant</span><br><span class="glyphicon glyphicon-usd" ><font size="24"></span>328</font></p>
+  <p><span>Dangi Restaurant</span>Cosy · Casual · Locals</p>
+    <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
   </div>
   	<div class="col-md-12">
   <div class="ACcontainer">
   <img src="dining9.jpg" alt="Avatar" style="width:400px">
-  <p><span>Cangi Restaurant</span><br><span class="glyphicon glyphicon-usd" ><font size="24"></span>538</font></p>
+  <p><span>Cangi Restaurant</span><br>All you can eat · Casual · Locals</p>
+    <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
 
 <div class="ACcontainer">
     <img src="dining10.jpg" alt="Avatar" style="width:400px">
-  <p><span>Bangi Restaurant</span><br><span class="glyphicon glyphicon-usd" ><font size="24"></span>542</font></p>
+  <p><span>Bangi Restaurant</span><br>Great cocktails · Cosy · Casual</p>
+    <br>
+<ul id="star">
+<li>★</li><li>★</li><li>★</li><li>★</li><li>★</li>
+</ul><span id="result"></span>
+  <br>
   <button type="button" class="btn btn-primary disabled">View more</button>
 </div>
   </div>
