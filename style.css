@@ -433,6 +433,18 @@ form{
 	width:100%;
 }
 
+footer{
+	background-color:#f1f1f1;
+	height:250px;
+	color:gray;
+	font-size:18px;
+}
+footer p{
+	text-align:center;
+	padding-top:40px;
+	padding-bottom:10px;
+}
+
 
 
 
