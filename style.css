@@ -14,6 +14,7 @@ header{
 }
 .container
 {
+	font-size: 36px;
 	padding-top:80px;
 	width:100%;
 	height:400px;
@@ -28,6 +29,7 @@ h3{
 }
 
  ul.topnav {
+	font-size:14px;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -78,7 +80,26 @@ ul.group{
 	height: 500px;
 	overflow:scroll;
 }
-
+.indexp img{
+	height:400px;
+	width:800px;
+	padding-top:5px;
+	padding-bottom:10px;
+	float:center;
+}
+.visitp{
+	border-style: solid;
+    border-width: 2px;
+	font-size:18px;
+	padding-left: 20px;
+}
+.visitp img{
+	height:400px;
+	width:800px;
+	padding-top:5px;
+	padding-bottom:10px;
+	float:center;
+}
 .normalp p{
     border-style: solid;
     border-width: 3px;
@@ -107,6 +128,32 @@ ul.group{
   cursor:pointer
 }
 
+.ingroup{
+    border-style: solid;
+    border-width: 3px;
+	font-size:16px;
+	padding-left: 20px;
+	margin: 2px 2px 2px 5px;
+}
+
+.ingroup h4{
+	font-size: 20px;
+	color: red;
+}
+
+.upbtn{
+	margin-top: 2px;
+	margin-bottom: 5px;
+	margin-right:5px;
+	text-decoration:underline;
+}
+
+.visitbtn{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right:5px;
+	text-decoration:underline;
+}
 #myBtn {
   display: none;
   position: fixed;
@@ -301,7 +348,7 @@ img.hover-shadow {
   }
 }
 
-/*dinning*/
+/*visit*/
 
 .DIcontainer {
   border: 2px solid #ccc;
