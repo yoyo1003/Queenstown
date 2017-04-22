@@ -92,15 +92,15 @@ function checkname()
 function checksurname()      
 {  
     var surname = document.getElementById("uSurName").value;
-    var ts = document.getElementById("snamets");  
+    var sts = document.getElementById("snamets");  
     if(surname.length<5|| surname.length>15)      
     {     
-        ts.innerHTML ="Surname must be 5-15 letters";  
-        ts.style.color="red";  
+        sts.innerHTML ="Surname must be 5-15 letters";  
+        sts.style.color="red";  
         return false;  
     }  
-    ts.innerHTML ='ok';  
-    ts.style.color='green';  
+    sts.innerHTML ='ok';  
+    sts.style.color='green';  
     return true;  
 }  
 function checkpass(){  
@@ -146,6 +146,18 @@ function checkemail(){
 function isEmail(str){  
     var reg = /[a-z0-9-]{1,30}@[a-z0-9-]{1,65}.[a-z]{3}/;  
     return reg.test(str);  
+}
+function checkagree(){
+	var uag = document.getElementById("#uAgree"); 
+	var agts = document.getElementById("agreets");
+	if(uag.checked == false){
+		agts.innerHTML ="Need your agreement";  
+        agts.style.color="red";  
+        return false; 
+	}
+	agts.innerHTML ="ok";  
+    agts.style.color="green"; 
+	return true;
 }  
 function register() {  
     if(!checkname()){  
@@ -153,9 +165,13 @@ function register() {
     }else if(!checksurname()){  
         return false;  
     }else if(!checkpass()) {  
+        return false; 
+	}else if(!checkrpass()) {  
         return false;  
-    } else if(!checkemail()){  
+    }else if(!checkemail()){  
         return false;  
-    }   
+    }else if(!checkagree()){  
+        return false;  
+    }	
     return true;  
-}  
+} 

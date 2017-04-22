@@ -75,6 +75,7 @@ ul.group{
 .indexp{
     border-style: solid;
     border-width: 3px;
+	border-color:#ccc;
 	font-size:18px;
 	padding-left: 20px;
 	height: 500px;
@@ -90,6 +91,7 @@ ul.group{
 .visitp{
 	border-style: solid;
     border-width: 2px;
+	border-color:#ccc;
 	font-size:18px;
 	padding-left: 20px;
 }
@@ -102,7 +104,8 @@ ul.group{
 }
 .normalp p{
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
+	border-color:#ccc;
 	font-size:18px;
 	padding-left: 5px;
 }
@@ -130,7 +133,8 @@ ul.group{
 
 .ingroup{
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
+	border-color:#ccc;
 	font-size:16px;
 	padding-left: 20px;
 	margin: 2px 2px 2px 5px;
@@ -311,7 +315,7 @@ img.hover-shadow {
 
 /*accommdation*/
 .ACcontainer {
-  border: 2px solid black;
+  border: 2px solid #ccc;
   border-bottom: 0px;
   background-color: lavender;
   border-radius: 10px;
@@ -429,8 +433,12 @@ img.hover-shadow {
 form{
     border-style: solid;
     border-width: 3px;
+	border-color:#ccc;
 	padding: 20px;
 	width:100%;
+	margin-left:20px;
+	margin-right:10px;
+	height:600px;
 }
 
 footer{

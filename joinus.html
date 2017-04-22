@@ -47,7 +47,7 @@
 <td id="namets"  class="signwarn"></td>  
 </tr>  
 <td class="sign">Surname：</td>  
-<td><input type="text" name="user.usersurname"  onblur="return checkname()" id="uSurName"  class="signtext"/></td>  
+<td><input type="text" name="user.usersurname"  onblur="return checksurname()" id="uSurName"  class="signtext"/></td>  
 <td id="snamets"  class="signwarn"></td>  
 </tr>  
 <tr>  
@@ -57,14 +57,20 @@
 </tr>  
 <tr>  
 <td class="sign">Password check：</td>  
-<td><input type="password" name="" id="uRPass"  onblur="return checkrpass();"  class="signtext" /></td>  
+<td><input type="password" name="Password.check" id="uRPass"  onblur="return checkrpass();"  class="signtext" /></td>  
 <td id="passrts"  class="signwarn"></td>  
 </tr>  
 <tr>  
 <td class="sign">Email：</td>  
 <td><input type="text" name="user.email" id="uEmail"  onblur="return checkemail();"  class="signtext" /></td>  
 <td id="emailts"  class="signwarn"></td>  
-</tr>  
+</tr>
+<tr>  
+<td class="sign">User agreement：</td>  
+<td><input type="checkbox" checked name="user.agreement" id="uAgree"  onblur="return checkagree();"  class="signtext" /><span class="glyphicon glyphicon-file" onclick="alert('The term of service')"></span>
+</td>  
+<td id="agreets"  class="signwarn"></td>  
+</tr>   
 <tr>  
 <td></td>  
 <td class="signin"><input class="signbtn" type="submit" value="submit"/>         
