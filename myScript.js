@@ -15,6 +15,7 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
+//rating
 window.onload = function(){
  var star = document.getElementById("star");
  var star_li = star.getElementsByTagName("li");
